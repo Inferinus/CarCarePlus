@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Maintenance Tracker - Home</title>
+    <link rel="stylesheet" href="../static/css/style.css"> <!-- Adjust the href value based on your actual file path -->
+    <script src="../static/js/script.js" defer></script> <!-- Adjust the src value based on your actual file path -->
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <!-- Logo goes here, you can use an image or text -->
+            <img src="../static/images/logo.png" alt="Car Maintenance Tracker"> <!-- Adjust the src value based on your actual file path -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/login">Sign In</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h1>Welcome to Car Maintenance Tracker</h1>
+            <p>Keep track of your car's health and maintenance records efficiently and never miss a service session.</p>
+
+            <!-- Login form; in a real application, the action might be a URL to your server-side login route -->
+            <form id="loginForm" action="/login" method="post" onsubmit="return validateLoginForm()">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Log In</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/support">Support</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

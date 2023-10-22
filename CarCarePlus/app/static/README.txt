@@ -1,0 +1,1 @@
+This directory holds static files like CSS, JavaScript, images

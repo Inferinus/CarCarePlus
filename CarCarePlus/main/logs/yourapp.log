@@ -1,0 +1,420 @@
+2023-11-09 01:30:53,188 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:33:27,980 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:33:29,494 ERROR: Exception on /vehicle_image/3VWSE69M35M035801 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 88, in vehicle_image
+    app_blueprint.logger.error(f"Failed to get vehicle image. Status Code: {response.status_code}, Response: {response.text}")
+AttributeError: 'Blueprint' object has no attribute 'logger'
+2023-11-09 01:33:29,494 ERROR: Exception on /vehicle_image/1GNALDEK9FZ108495 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 88, in vehicle_image
+    app_blueprint.logger.error(f"Failed to get vehicle image. Status Code: {response.status_code}, Response: {response.text}")
+AttributeError: 'Blueprint' object has no attribute 'logger'
+2023-11-09 01:35:25,066 ERROR: Exception on /vehicle_image/3VWSE69M35M035801 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 88, in vehicle_image
+    app_blueprint.logger.error(f"Failed to get vehicle image. Status Code: {response.status_code}, Response: {response.text}")
+AttributeError: 'Blueprint' object has no attribute 'logger'
+2023-11-09 01:35:25,066 ERROR: Exception on /vehicle_image/1GNALDEK9FZ108495 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 88, in vehicle_image
+    app_blueprint.logger.error(f"Failed to get vehicle image. Status Code: {response.status_code}, Response: {response.text}")
+AttributeError: 'Blueprint' object has no attribute 'logger'
+2023-11-09 01:37:15,492 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:37:20,365 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:37:20,365 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:45:14,149 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:45:17,829 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:45:17,829 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:45:26,219 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:45:26,219 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:46:22,243 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:46:22,246 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:46:22,247 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:46:32,301 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:46:32,302 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:46:32,307 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:88]
+2023-11-09 01:49:33,342 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:49:36,840 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:49:36,840 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:49:36,873 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:52:03,008 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:52:10,395 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:52:10,396 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:52:10,396 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:52:40,464 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:52:46,862 ERROR: Exception on /vehicle_image/3VWSE69M35M035801 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 83, in vehicle_image
+    image_url = response_json.get('data')[0].get('image', None)
+KeyError: 0
+2023-11-09 01:52:47,882 ERROR: Exception on /vehicle_image/1GNALDEK9FZ108495 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 83, in vehicle_image
+    image_url = response_json.get('data')[0].get('image', None)
+KeyError: 0
+2023-11-09 01:53:00,997 ERROR: Exception on /vehicle_image/JHMFG112060011793 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 83, in vehicle_image
+    image_url = response_json.get('data')[0].get('image', None)
+TypeError: 'NoneType' object is not subscriptable
+2023-11-09 01:53:59,699 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 01:54:03,485 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:54:03,485 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:54:03,516 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:58:08,495 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:58:08,495 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 01:58:08,503 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 02:10:10,157 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 02:10:11,510 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 02:10:11,510 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 02:10:11,541 ERROR: Failed to get vehicle image. Status Code: 401, Response: {
+  "Message": "Unauthorized – Invalid API Key"
+} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py:90]
+2023-11-09 02:43:45,986 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 02:43:49,565 ERROR: Exception on /dashboard [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 83, in dashboard
+    return render_template('dashboard.html', user=user, cars=cars, username=username)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\templates\dashboard.html", line 44, in top-level template code
+    <img src="{{ url_for('app_blueprint.vehicle_image', vin=car.vin) }}" alt="{{ car.make }} {{ car.model }}" class="vehicle-image">
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'app_blueprint.vehicle_image' with values ['vin']. Did you mean 'app_blueprint.vehicles' instead?
+2023-11-09 02:50:47,465 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 02:50:52,707 ERROR: Exception on /maintenance_info [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\views.py", line 17, in maintenance_info
+    car = Car.query.filter_by(owner=current_user, vin=vin).first()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1806, in filter_by
+    clauses = [
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1807, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\operators.py", line 373, in __eq__
+    return self.operate(eq, other)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 317, in operate
+    return op(self.comparator, *other, **kwargs)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1312, in __eq__
+    self.property._optimized_compare(
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1700, in _optimized_compare
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Mapped instance expected for relationship comparison to object.   Classes, queries and other SQL elements are not accepted in this context; for comparison with a subquery, use Car.owner.has(**criteria).
+2023-11-09 03:05:53,027 ERROR: Exception on /maintenance_info [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\views.py", line 17, in maintenance_info
+    car = Car.query.filter_by(owner=current_user, vin=vin).first()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1806, in filter_by
+    clauses = [
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1807, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\operators.py", line 373, in __eq__
+    return self.operate(eq, other)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 317, in operate
+    return op(self.comparator, *other, **kwargs)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1312, in __eq__
+    self.property._optimized_compare(
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1700, in _optimized_compare
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Mapped instance expected for relationship comparison to object.   Classes, queries and other SQL elements are not accepted in this context; for comparison with a subquery, use Car.owner.has(**criteria).
+2023-11-09 03:09:18,016 ERROR: Exception on /maintenance_info [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\views.py", line 17, in maintenance_info
+    car = Car.query.filter_by(owner=current_user, vin=vin).first()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1806, in filter_by
+    clauses = [
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1807, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\operators.py", line 373, in __eq__
+    return self.operate(eq, other)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 317, in operate
+    return op(self.comparator, *other, **kwargs)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1312, in __eq__
+    self.property._optimized_compare(
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1700, in _optimized_compare
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Mapped instance expected for relationship comparison to object.   Classes, queries and other SQL elements are not accepted in this context; for comparison with a subquery, use Car.owner.has(**criteria).
+2023-11-09 03:09:27,902 ERROR: Exception on /maintenance_info [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\views.py", line 17, in maintenance_info
+    car = Car.query.filter_by(owner=current_user, vin=vin).first()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1806, in filter_by
+    clauses = [
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 1807, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\operators.py", line 373, in __eq__
+    return self.operate(eq, other)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\attributes.py", line 317, in operate
+    return op(self.comparator, *other, **kwargs)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1312, in __eq__
+    self.property._optimized_compare(
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\relationships.py", line 1700, in _optimized_compare
+    raise sa_exc.ArgumentError(
+sqlalchemy.exc.ArgumentError: Mapped instance expected for relationship comparison to object.   Classes, queries and other SQL elements are not accepted in this context; for comparison with a subquery, use Car.owner.has(**criteria).
+2023-11-09 03:19:33,761 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 03:19:38,029 ERROR: Exception on /maintenance_info [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\views.py", line 17, in maintenance_info
+    car = Car.query.filter_by(user_id=current_user.id, vin=vin).first()
+AttributeError: 'int' object has no attribute 'id'
+2023-11-09 03:25:51,285 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 03:36:21,398 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 03:42:31,076 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 03:49:14,945 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 03:55:17,877 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 03:55:33,563 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 03:58:00,061 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:07:53,657 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:22:00,338 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:25:09,054 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:26:03,889 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:36:38,671 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:43:44,157 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:55:09,542 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:57:41,980 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:58:46,424 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 04:59:44,059 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:00:21,165 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:00:52,562 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:01:27,998 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:02:27,631 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:03:18,149 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:03:42,573 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:04:26,449 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:06:14,447 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:08:08,529 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:11:44,853 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:12:23,525 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:16:54,032 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:18:43,310 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:32:02,723 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:32:04,063 ERROR: Exception on /dashboard [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 83, in dashboard
+    return render_template('dashboard.html', user=user, cars=cars, username=username)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\templates\dashboard.html", line 39, in top-level template code
+    <img src="{{ url_for('app_blueprint.vehicle_image', vin=car.vin) }}" alt="{{ car.make }} {{ car.model }}" class="vehicle-image">
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'app_blueprint.vehicle_image' with values ['vin']. Did you mean 'app_blueprint.vehicles' instead?
+2023-11-09 05:40:03,817 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 05:40:36,289 ERROR: Exception on /dashboard [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 83, in dashboard
+    return render_template('dashboard.html', user=user, cars=cars, username=username)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(app, template, context)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\templating.py", line 130, in _render
+    rv = template.render(context)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\templates\dashboard.html", line 39, in top-level template code
+    <img src="{{ url_for('app_blueprint.vehicle_image', vin=car.vin) }}" alt="{{ car.make }} {{ car.model }}" class="vehicle-image">
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\routing\map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'app_blueprint.vehicle_image' with values ['vin']. Did you mean 'app_blueprint.vehicles' instead?
+2023-11-09 05:41:51,429 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:12:14,224 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:18:46,606 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:25:10,986 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]

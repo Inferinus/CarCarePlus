@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Recommendations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recommendations.css') }}">
+        <div class="nav-links">
+            <a href="/dashboard">Dashboard</a>
+            <li><a href="/profile">Profile Settings</a></li>
+            <a href="/logout">Logout</a>
+        </div>  
+</head>
+<body>
+    <div class="nav-links">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/vehicles">My Vehicles</a>
+        <a href="/logout">Logout</a>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Car Maintenance Recommendations</h2>
+        
+        <div class="list-group">
+            {% for item in recommendations %}
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ item.description }}</h5>
+                    <small>Due at {{ item.due_mileage }} miles</small>
+                </div>
+                <p class="mb-1">Labor Cost: ${{ item.labor_cost | default('Not available') }}</p>
+                <p class="mb-1">Misc Cost: ${{ item.misc_cost | default('Not available') }}</p>
+                <p class="mb-2">Total Cost: ${{ item.total_cost | default('Not available') }}</p>
+
+                {% if item.parts %}
+                <div class="parts-list">
+                    <h6 class="mb-1">Parts Required:</h6>
+                    <ul class="list-unstyled">
+                        {% for part in item.parts %}
+                        <li>{{ part.desc | default('Part description not available') }} (Qty: {{ part.qty | default('0') }}) - ${{ part.price | default('0.00') }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% else %}
+                <div class="parts-list">
+                    <h6 class="mb-1">Parts Required:</h6>
+                    <p>No parts information available.</p>
+                </div>
+                {% endif %}
+            </a>
+            {% else %}
+            <p class="text-center">No maintenance recommendations found.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body data-default-image-path="{{ url_for('static', filename='images/no_image_available.png') }}">
+    <header>
+        <div class="logo">
+            <h1>Car Care+</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="/add_car">Add New Vehicle</a>
+            <a href="/logout" class="logout-link">Logout</a>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/engineCheck">Check Engine Light Check</a></li>
+            <li><a href="/maintenance">Recommended Maintenance Schedule</a></li>
+            <li><a href="/profile">Profile Settings</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard-content">
+  
+        <h2><a href="/profile">Welcome, {{ username }}!</a></h2>
+
+        <section class="vehicles">
+            <!-- Vehicle List Container -->
+            <div id="vehicle-list">
+                <h3>Your Vehicles</h3>
+                {% if cars %}
+                    <ul>
+                    {% for car in cars %}
+                        <li>
+                            <div class="vehicle-info">
+                                <img id="vehicleImage_{{ car.vin }}" src="" alt="Vehicle Image" style="max-width: 100%; height: auto;">
+                                <h4>{{ car.make }} {{ car.model }} ({{ car.year }})</h4>
+                                <p>Mileage: {{ car.mileage }}</p>
+                                <a href="{{ url_for('app_blueprint.edit_car', id=car.id) }}" class="edit-button">Edit</a>
+                                <form action="{{ url_for('app_blueprint.delete_car', id=car.id) }}" method="POST" style="display: inline;">
+                                    <button type="submit" class="delete-button">Delete</button>
+                                </form>
+                                <button onclick="getMaintenance('{{ car.vin }}', '{{ car.mileage }}')" class="maintenance-button">Upcoming Maintenance</button>
+                                <button onclick="fetchAndDisplayVehicleImage('{{ car.vin }}')" class="image-button">Load Image</button>
+                            </div>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>You have no vehicles added. Add a new vehicle <a href="{{ url_for('app_blueprint.add_car') }}">here</a>.</p>
+                {% endif %}
+            </div>
+        </section>
+        
+        <!-- Maintenance Modal -->
+        <div id="maintenanceModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Upcoming Maintenance</h2>
+                <div id="maintenanceInfo">No data available.</div>
+            </div>
+        </div>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </main>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}" defer></script>
+</body>
+</html>

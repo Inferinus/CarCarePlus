@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login.css"> <!-- Assuming you have a CSS file for styling -->
+</head>
+<body>
+
+    <div class="login-container">
+        <h2 class="login-title">Login</h2>
+        <!-- Display Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    
+    <!-- Login Form -->
+    <form method="post">
+        
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Login button -->
+        <button type="submit" class="btn">Login</button>
+
+        <!-- Sign Up button -->
+        <div class="sign-up">
+            <p>Don't have an account?</p>
+            <a href="/register"><button type="button">Sign Up</button></a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

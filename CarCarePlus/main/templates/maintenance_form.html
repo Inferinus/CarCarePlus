@@ -1,0 +1,47 @@
+<!-- maintenance_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/maintenance_form.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/engineCheck">Check Engine Light Check</a>
+            <a href="/profile">Profile Settings</a></li>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+    <h1>Maintenance Schedule Form</h1>
+    
+    <!-- Flash messages for displaying alerts or information -->
+    {% for message in get_flashed_messages() %}
+        <div class="alert">{{ message }}</div>
+    {% endfor %}
+
+    <form method="post" action="{{ url_for('views.maintenance') }}">
+        <label for="vin"><b>Vehicle Identification Number</b> (VIN):</label><br>
+        <input type="text" id="vin" name="vin"><br><br>
+    
+        <label for="year"><b>Year:</b> (Optional if vin is entered)</label><br>
+        <input type="text" id="year" name="year"><br><br>
+    
+        <label for="make"><b>Make:</b> (Optional if vin is entered)</label><br>
+        <input type="text" id="make" name="make"><br><br>
+    
+        <label for="model"><b>Model:</b> (Optional if vin is entered)</label><br>
+        <input type="text" id="model" name="model"><br><br>
+    
+        <label for="unit"><b>Unit</b> (Optional):</label><br>
+        <input type="text" id="unit" name="unit" placeholder="e.g., metric"><br><br>
+    
+        <input type="submit" value="Get Maintenance Recommendations">
+    </form>
+    
+    
+</body>
+</html>

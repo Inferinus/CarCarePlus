@@ -1,0 +1,261 @@
+2023-11-09 06:34:50,483 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:36:34,427 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:36:41,800 ERROR: HTTP Error: 404 Client Error: Not Found for url: http://api.carmd.com/v3.0/diag?vin=1GNALDEK9FZ108495&mileage=125000&unit=mi, Response Text: {"Message":"No HTTP resource was found that matches the request URI 'http://api.carmd.com/v3.0/diag?vin=1GNALDEK9FZ108495&mileage=125000&unit=mi'."} [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\views.py:309]
+2023-11-09 06:42:39,405 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:44:31,162 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:46:14,595 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:48:35,363 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:52:39,998 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:53:47,505 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 06:54:45,550 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 07:07:52,730 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 07:11:55,044 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 07:55:22,097 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 08:30:38,503 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 08:30:40,888 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:30:43,046 ERROR: Exception on /vehicle_image/3VWSE69M35M035801 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:33:17,050 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:33:17,079 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:33:18,246 ERROR: Exception on /vehicle_image/3VWSE69M35M035801 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:33:19,221 ERROR: Exception on /vehicle_image/4T1BB3EK3AU115504 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:34:19,587 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:34:19,630 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:34:19,661 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:34:19,755 ERROR: Exception on /vehicle_image/3VWSE69M35M035801 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:34:20,301 ERROR: Exception on /vehicle_image/4T1BB3EK3AU115504 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:34:20,819 ERROR: Exception on /vehicle_image/1GNALDEK9FZ108495 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 232, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:35:51,988 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 08:35:57,782 ERROR: Exception on /vehicle_image/4T1BB3EK3AU115504 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 234, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:35:57,783 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 234, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:35:57,815 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 234, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:35:58,323 ERROR: Exception on /vehicle_image/1GNALDEK9FZ108495 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 234, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 08:35:58,324 ERROR: Exception on /vehicle_image/null [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 234, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+IndexError: string index out of range
+2023-11-09 08:35:58,838 ERROR: Exception on /vehicle_image/3VWSE69M35M035801 [GET] [in C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py:1741]
+Traceback (most recent call last):
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\awwal\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\main\api\app.py", line 234, in vehicle_image
+    image_url = response.json()['data'][0]['image']
+KeyError: 0
+2023-11-09 09:06:29,203 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 09:18:04,264 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 09:27:44,012 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 09:42:44,287 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 10:05:31,747 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 10:20:23,140 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 10:21:41,152 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 10:34:32,569 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 10:47:54,551 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 10:52:02,106 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 10:52:53,062 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]
+2023-11-09 11:33:38,544 INFO: YourApp startup [in c:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\run.py:25]

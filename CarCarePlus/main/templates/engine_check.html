@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Check Diagnostics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/maintenance_form.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/maintenance">Maintenance Schedule</a>
+            <a href="/profile">Profile Settings</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+    <h1>Engine Check Diagnostic</h1>
+    
+    <!-- Flash messages for displaying alerts or information -->
+    {% for message in get_flashed_messages() %}
+        <div class="alert">{{ message }}</div>
+    {% endfor %}
+
+    <form id="diagnosticForm">
+        <label for="vin"><b>Vehicle Identification Number</b> (VIN):</label>
+        <input type="text" id="vin" name="vin" required>
+      
+        <label for="dtc"><b>Diagnostic Trouble Code</b> (DTC):</label>
+        <input type="text" id="dtc" name="dtc" required>
+
+        <label for="mileage"><b>Mileage:</b></label>
+        <input type="number" id="mileage" name="mileage" required>
+      
+        <label for="unit"><b>Unit: </b></label>
+        <select id="unit" name="unit">
+          <option value="mi" selected>Miles</option>
+          <option value="km">Kilometers</option>
+        </select>
+      
+        <input type="submit" value="Get Diagnostics">
+    </form>
+    
+    <div id="diagnosticResults"></div>
+    
+    <script>
+        document.getElementById('diagnosticForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const vin = document.getElementById('vin').value;
+            const mileage = document.getElementById('mileage').value;
+            const dtc = document.getElementById('dtc').value; // Capture the DTC value
+            const unit = document.getElementById('unit').value;
+
+            // Make sure to include the DTC in the fetch URL
+            fetch('/get_diagnostics?vin=' + encodeURIComponent(vin) +
+                '&mileage=' + encodeURIComponent(mileage) +
+                '&dtc=' + encodeURIComponent(dtc) + // Include DTC in the query parameters
+                '&unit=' + encodeURIComponent(unit), {
+                method: 'GET',
+                headers: {
+                    "Content-Type": "application/json",
+                    // Additional headers like authorization should be handled in your Flask app, not on the client side
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                displayResults(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    
+        function displayResults(data) {
+    const resultsContainer = document.getElementById('diagnosticResults');
+    resultsContainer.innerHTML = ''; // Clear previous results
+    
+    // Check if there is data to display
+    if (data && data.code) {
+        // Construct the HTML for the results
+        const resultHTML = `
+            <div class="result">
+                <p><strong>Code:</strong> ${data.code}</p>
+                <p><strong>Urgency:</strong> ${data.urgency_desc}</p>
+                <p><strong>Effect on Vehicle:</strong> ${data.effect_on_vehicle}</p>
+                <p><strong>Responsible System:</strong> ${data.responsible_system}</p>
+                <p><strong>Layman's Definition:</strong> ${data.layman_definition}</p>
+            </div>
+        `;
+
+        // Set the innerHTML of the results container to the result HTML
+        resultsContainer.innerHTML = resultHTML;
+    } else {
+        // If there is no data or an error, display an error message
+        resultsContainer.innerHTML = '<p>Error: No diagnostic information available.</p>';
+    }
+}
+    </script>
+</body>
+</html>

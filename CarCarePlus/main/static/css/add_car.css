@@ -1,0 +1,159 @@
+/* Simple CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+nav ul.nav_links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+nav ul.nav_links li {
+    margin: 0 10px;
+}
+
+nav ul.nav_links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul.nav_links li a:hover {
+    background-color: #111;
+}
+
+.profile {
+    text-align: right;
+    padding: 14px 16px;
+}
+
+.profile a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.profile a:hover {
+    color: #ddd;
+}
+
+main {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.form-group button.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-group button.submit-btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Flashes/messages styling */
+ul.flashes {
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+ul.flashes li {
+    background-color: #ffd700; /* Example color for flash messages */
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul.nav_links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul.nav_links li {
+        text-align: center;
+    }
+
+    nav ul.nav_links li a {
+        padding: 10px;
+    }
+
+    .profile {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    main {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

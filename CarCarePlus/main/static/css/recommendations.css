@@ -1,0 +1,31 @@
+body {
+    background: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.parts-list {
+    background: #e9ecef;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.parts-list h6 {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: #f8f9fa; 
+    border-radius: 5px; 
+}

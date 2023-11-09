@@ -1,0 +1,99 @@
+/* General page and form container styling */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.form-container {
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #0000001a;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Form title */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Styling form fields */
+input[type=text], input[type=number] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px; /* Increased margin-bottom to give some breathing space */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded borders */
+    box-sizing: border-box; /* Makes sure the padding doesn’t affect the final dimensions */
+    font-size: 16px; /* Larger font size for readability */
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    border: 1px solid #4CAF50; /* Highlight border with theme color when focused */
+    outline: none;
+}
+
+/* Style for the labels */
+label {
+    margin-bottom: 10px;
+    display: block; /* Labels take their own line */
+    font-size: 18px;
+    color: #333; /* Dark color for better readability */
+}
+
+/* Styling the submit button */
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color: #4CAF50; /* Green theme */
+    border: none;
+    border-radius: 5px; /* Rounded borders */
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Delete button if it's styled differently */
+.delete-btn {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color: #f44336; /* Red for delete actions */
+    border: none;
+    border-radius: 5px; /* Rounded borders */
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px; /* Extra space from the rest of the form */
+}
+
+.delete-btn:hover {
+    background-color: #d7372e; /* Darker red on hover */
+}
+
+/* Extra styles for form links or actions */
+.form-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 16px;
+}
+
+.form-link a {
+    color: #4CAF50; /* Theme color */
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}

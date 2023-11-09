@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\awwal\OneDrive\Documents\HOOD\Senior Year\FALL '23\Capstone Seminar\CarCarePlus\venv"
+VIRTUAL_ENV="C:\Users\awwal\OneDrive\Desktop\CarCarePlus\CarCarePlus\CarCarePlus\app\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

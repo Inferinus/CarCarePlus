@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Car Maintenance Tracker</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="/profile">Profile</a>
+            <a href="/add_car">Add New Vehicle</a>
+            <a href="{{ url_for('logout') }}" class="logout-link">Logout</a>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/vehicles">My Vehicles</a></li>
+            <li><a href="/maintenance">Maintenance Records</a></li>
+            <li><a href="/reminders">Reminders</a></li>
+            <li><a href="/profile_settings">Profile Settings</a></li>
+        </ul>
+    </aside>
+
+    <main class="dashboard-content">
+        <h2>Welcome, {{ user.username }}!</h2>
+
+        <section class="overview">
+            <h3>Upcoming Maintenance</h3>
+            <p><!-- Dynamic content: Next scheduled maintenance --></p>
+        </section>
+
+        <section class="vehicles">
+            <h3>Your Vehicles</h3>
+            {% if cars %}
+                <ul>
+                {% for car in cars %}
+                    <li>
+                        <h4>{{ car.make }} {{ car.model }} ({{ car.year }})</h4>
+                        <a href="{{ url_for('edit_car', id=car.id) }}">Edit</a>
+                        <form action="{{ url_for('delete_car', id=car.id) }}" method="POST">
+                            <input type="submit" value="Delete" />
+                        </form>
+                    </li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>You have no vehicles added. Add a new vehicle <a href="{{ url_for('add_car') }}">here</a>.</p>
+            {% endif %}
+        </section>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </main>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}" defer></script>
+</body>
+</html>

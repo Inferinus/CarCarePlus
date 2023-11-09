@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Maintenance Record</title>
+    <style>
+        /* Inline CSS for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        main {
+            margin: 15px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            color: #333;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+        .form-group input[type=file] {
+            padding: 3px;
+        }
+        .form-group button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .form-group button:hover {
+            background-color: white; 
+            color: black; 
+            border: 1px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Car Maintenance Tracker</h1>
+        <nav>
+            <a href="/dashboard">Dashboard</a> | <a href="/profile">Profile</a> | <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Add New Maintenance Record</h2>
+        <form action="/submit-maintenance-record" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="maintenance-type">Type of Maintenance:</label>
+                <select id="maintenance-type" name="maintenanceType" required>
+                    <option value="">Select Maintenance Type</option>
+                    <option value="oil_change">Oil Change</option>
+                    <option value="tire_rotation">Tire Rotation</option>
+                    <!-- Add other maintenance types as necessary -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="service-date">Date of Service:</label>
+                <input type="date" id="service-date" name="serviceDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-cost">Cost:</label>
+                <input type="number" id="service-cost" name="serviceCost" step="0.01" min="0" placeholder="Enter cost" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-center">Workshop/Service Center:</label>
+                <input type="text" id="service-center" name="serviceCenter" placeholder="Enter workshop or service center name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service-notes">Additional Notes:</label>
+                <textarea id="service-notes" name="serviceNotes" rows="4" placeholder="Enter any additional information (optional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="receipt-upload">Upload Receipt:</label>
+                <input type="file" id="receipt-upload" name="receiptUpload" accept="image/*,.pdf">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Save Record</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details</title>
+    <style>
+        /* Inline CSS for demonstration, but you should use external CSS files for actual projects */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, .vehicle-info, .tabs, .tab-content, footer {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 12px;
+        }
+        .vehicle-info img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+        .tab-content, .form-section {
+            display: none; /* Hidden by default */
+        }
+        .tab-content.active, .form-section.active {
+            display: block; /* Shown when activated */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="/profile">Profile</a> | 
+            <a href="/dashboard">Dashboard</a> | 
+            <a href="/logout">Log Out</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="vehicle-info">
+            <h2>Vehicle Details</h2>
+            <!-- Mock vehicle details; these would come from your database in a real application -->
+            <p><strong>Name:</strong> John's Car</p>
+            <p><strong>Model:</strong> XYZ</p>
+            <p><strong>Make:</strong> ABC Motors</p>
+            <p><strong>Year:</strong> 2025</p>
+            <img src="/path/to/vehicle/image.jpg" alt="Vehicle Image">
+            <button onclick="showEditVehicleForm()">Edit Vehicle</button>
+        </section>
+
+        <section class="tabs">
+            <button onclick="openTab('vehicle-info')">Vehicle Info</button>
+            <button onclick="openTab('maintenance-records')">Maintenance Records</button>
+            <button onclick="openTab('add-new-record')">Add New Record</button>
+            <button onclick="openTab('upcoming-maintenance')">Upcoming Maintenance</button>
+            <button onclick="openTab('past-maintenance')">Past Maintenance</button>
+        </section>
+
+        <section id="vehicle-info" class="tab-content active">
+            <!-- This content would be dynamically loaded based on actual vehicle data -->
+            <p>Some specific information about the vehicle...</p>
+        </section>
+
+        <section id="maintenance-records" class="tab-content">
+            <!-- List of maintenance records -->
+        </section>
+
+        <section id="add-new-record" class="tab-content">
+            <!-- Form to add new maintenance record -->
+            <form id="newRecordForm" onsubmit="submitNewRecord(event)">
+                <label for="activity">Maintenance Activity:</label>
+                <input type="text" id="activity" name="activity">
+                
+                <label for="cost">Cost:</label>
+                <input type="number" id="cost" name="cost">
+                
+                <label for="workshop">Workshop:</label>
+                <input type="text" id="workshop" name="workshop">
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                
+                <button type="submit">Add Record</button>
+            </form>
+        </section>
+
+        <section id="upcoming-maintenance" class="tab-content">
+            <!-- Information about upcoming maintenance -->
+        </section>
+
+        <section id="past-maintenance" class="tab-content">
+            <!-- Information about past maintenance -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Car Maintenance Tracker</p>
+    </footer>
+
+    <script>
+        function openTab(tabId) {
+            // Hide all tab content
+            var tabContents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = 'none';
+            }
+
+            // Show the specific tab content
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        function showEditVehicleForm() {
+            // Here you could display a form with current vehicle info allowing the user to edit them
+            // This would involve more backend interaction to update the records in your database
+        }
+
+        function submitNewRecord(event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            // Here you would do the actual data submission to your backend, e.g., via AJAX.
+            // This example just logs to the console.
+
+            var newRecord = {
+                activity: document.getElementById('activity').value,
+                cost: document.getElementById('cost').value,
+                workshop: document.getElementById('workshop').value,
+                date: document.getElementById('date').value
+            };
+
+            console.log('Submitting new record:', newRecord);
+
+            // You would then clear the form and maybe give feedback to the user
+            document.getElementById('newRecordForm').reset();
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Basic resets for better control over styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures full vertical height coverage */
+    margin: 0;
+}
+
+.login-container {
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Aligns the content to the center */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* optional: for rounded corners */
+}
+
+
+/* Style for the login and signup buttons */
+.btn, .sign-up button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px; /* Consistent rounding with other elements */
+    margin-top: 10px; /* Some space between elements */
+}
+
+.btn {
+    /* Your styles */
+    padding: 10px 20px; /* example */
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px; /* for rounded corners */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* darker shade for hover effect */
+}
+
+.sign-up {
+    margin-top: 20px; /* Additional space above the sign-up section */
+}
+
+.sign-up p {
+    margin-bottom: 10px; /* Space between text and button */
+}
+
+.alert {
+    padding: 10px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Consistency in design */
+    text-align: center;
+}
+
+/* Adding hover effects for buttons */
+.btn:hover, .sign-up button:hover {
+    background-color: #0056b3; /* A shade darker than the original blue */
+}
+
+.login-title {
+    padding-bottom: 20px; 
+}

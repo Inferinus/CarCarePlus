@@ -1,0 +1,86 @@
+/* Apply base styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Add a fixed height for the header or make it dynamic based on content */
+    height: 60px; /* Example fixed height */
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+.main-nav a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #dddddd;
+}
+
+.sidebar {
+    background-color: #404040;
+    color: white;
+    min-width: 200px;
+    max-width: 200px;
+    /* Adjust the height to account for the header */
+    height: calc(100vh - 60px); /* Subtract the height of the header */
+    overflow-y: auto;
+    position: fixed;
+    /* Position the top of the sidebar below the header */
+    top: 60px; /* Match the height of the header */
+    left: 0;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.sidebar li a:hover {
+    color: #dddddd;
+}
+
+.dashboard-content {
+    /* Ensure dashboard content does not overlap with the header */
+    padding-top: 60px; /* Match the height of the header */
+    margin-left: 220px; /* Adjusted to the width of the sidebar, plus a bit of margin */
+    padding: 20px;
+}
+
+.logout-link {
+    background-color: #ff6262;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-link:hover, .logout-link:focus {
+    background-color: #e60000;
+}

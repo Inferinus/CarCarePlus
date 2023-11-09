@@ -1,37 +1,8 @@
 CarCarePlus Project
 ===================
 
-Author: [Your Full Name]
-Git Repository: [Your Git Repo URL]
-
-Contents of the ZIP File
-------------------------
-The ZIP file includes the following directories and files:
-
-- /app/
-  - __init__.py
-  - views.py
-  - models.py
-- /templates/
-  - dashboard.html
-  - login.html
-  - register.html
-  - etc.
-- /static/
-  - /css/
-    - dashboard.css
-    - main.css
-  - /js/
-    - dashboard.js
-    - main.js
-  - /images/
-    - no_image_available.png
-    - etc.
-- /tests/
-  - test_app.py
-- requirements.txt
-- run.py
-- README.txt (this file)
+Author: Awwal Ahmed
+Git Repository: https://github.com/Inferinus/CarCarePlus
 
 Tech Stack Used
 ---------------
